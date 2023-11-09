@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		{% block stylesheets %}
+			<link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+			<meta charset="utf-8">
+			<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+			<meta content="" name="description"/>
+			<meta content="" name="author"/>
+
+			<title>RECRUITMENT OF ENUMERATORS</title>
+			<link href="{{ asset('assets/recrutement/css/styles.css') }}" rel="stylesheet">
+
+			<!-- Bootstrap CSS 
+																																																			    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" > -->
+			<!-- Fonts -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/fonts/font-awesome.min.css')}}"> <!-- Icon -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/fonts/simple-line-icons.css')}}">
+			<!-- Slicknav -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/css/slicknav.css')}}">
+			<!-- Nivo Lightbox -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/css/nivo-lightbox.css')}}">
+			<!-- Animate -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/css/animate.css')}}">
+			<!-- Main Style -->
+			<link
+			rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/css/main.css')}}">
+			<!-- Responsive Style -->
+			<link rel="stylesheet" type="text/css" href="{{ asset('assets/recrutement/css/responsive.css')}}">
+
+
+			<link rel="stylesheet" href="{{ asset('assets/recrutement/css/select2.min.css')}}"/>
+
+			<link href="{{ asset('assets/recrutement/css/select2-bootstrap4.min.css') }}" rel="stylesheet">
+		{% endblock %}
+
+		{% block javascripts %}
+			{# <script src="{{ asset('assets/recrutement/js/jquery-3.6.0.min.js') }}"></script> #}
+			<script src="{{ asset('assets/recrutement/js/jquery-min.js') }}"></script>
+
+			<script src="{{ asset('assets/recrutement/js/select2.min.js') }}"></script>
+			<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/en.js"></script>
+
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="{{ asset('assets/recrutement/js/popper.min.js') }}"></script>
+			<!-- <script src="{{ asset('assets/recrutement/js/bootstrap.min.js') }}"></script> -->
+			<script src="{{ asset ('assets/recrutement/js/jquery.mixitup.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/jquery.counterup.min.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/waypoints.min.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/wow.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/jquery.nav.js') }}"></script>
+			{# <!-- <script src="{{ asset ('assets/recrutement/js/jquery.easing.min.js') }}"></script> --> #}
+			<script src="{{ asset ('assets/recrutement/js/nivo-lightbox.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/jquery.slicknav.js') }}"></script>
+			<script src="{{ asset ('assets/recrutement/js/main.js') }}"></script>
+
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+			<!-- Third party plugin JS-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VKMFCQHPP"></script>
+
+			<script>
+				window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-4VKMFCQHPP');
+			</script>
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+	</body>
+</html>

@@ -1,0 +1,775 @@
+{% extends 'baserecrute.html.twig' %}
+
+{% block title %}Formulaire de recrutement
+{% endblock %}
+
+{% block body %}
+	<!-- Header Area wrapper Starts -->
+	<header
+		id="header-wrap">
+		<!-- Navbar Start -->
+		<nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+			<div
+				class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						<span class="icon-menu"></span>
+						<span class="icon-menu"></span>
+						<span class="icon-menu"></span>
+					</button>
+					<a href="index.php" class="navbar-brand"><img src="{{ asset('assets/recrutement/img/logo_gbos_2.png')}}" alt="logo"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="main-navbar">
+					<ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+						<li class="nav-item active">
+							<a class="nav-link" href="#hero-area">
+								Accueil
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aplly">
+								Inscription
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#how">
+								Comment s'inscrire
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#application">
+								Mon Dossier
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Mobile Menu Start -->
+			<ul class="onepage-nev mobile-menu">
+				<li>
+					<a href="#home">Accueil</a>
+				</li>
+				<li>
+					<a href="#apply">Inscription</a>
+				</li>
+				<li>
+					<a href="#how">Comment s'inscrire</a>
+				</li>
+				<li>
+					<a href="#application">Mon Dossier</a>
+				</li>
+			</ul>
+			<!-- Mobile Menu End -->
+		</nav>
+		<!-- Navbar End -->
+
+		<!-- Hero Area Start -->
+		<div id="hero-area" class="hero-area-bg">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 text-center">
+						<div class="contents">
+							<div class="header-button wow fadeInUp" data-wow-delay="1s">
+								<img alt="" id="" src="{{ asset ('assets/recrutement/img/logo_full-removebg.png')}}"/>
+							</div>
+							<h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Recrutement des agents cartographes</h2>
+							<a class="btn btn-sm " href="#aplly" style="background-color: #292f94;">
+								S'inscrire maintenant</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Hero Area End -->
+
+	</header>
+	<!-- Header Area wrapper End -->
+
+
+	<!-- Apply Section Start -->
+	<section id="aplly" class="section-padding">
+		<div class="contact-form">
+			<div class="container" style="max-width: 1500px;">
+				<h2 class="section-title wow flipInX" data-wow-delay="0.4s">S'inscrire</h2>
+				<div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+					<div class="col-md-12 col-lg-12 col-sm-12">
+						<div class="contact-block">
+							<h5>Remplir le formulaire</h5>
+							<div class="row justify-content-center">
+								<div class="container-fluid">
+									<div class="row justify-content-center">
+										<div class="col-12 text-center p-0 mt-3 mb-2">
+											<div class="card px-0 pt-4 pb-0 mt-3 mb-3" style="padding-left: 0.5rem!important; padding-right: 0.5rem!important;">
+												<ul id="progressbar">
+													<li class="active" id="account">
+														<strong>
+															Identitification
+														</strong>
+													</li>
+													<li id="personal">
+														<strong>
+															Informations Personnelles
+														</strong>
+													</li>
+													<li id="payment">
+														<strong>
+															Etudes
+														</strong>
+													</li>
+													<li id="fichers">
+														<strong>
+															Justificatifs
+														</strong>
+													</li>
+													<li id="confirm">
+														<strong>
+															Terminer!
+														</strong>
+													</li>
+												</ul>
+												<div class="progress">
+													<div aria-valuemax="100" aria-valuemin="0" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
+												</div>
+												<br>
+													<!-- fieldsets -->
+													<form novalidate class="needs-validation msform" id="step1">
+														<fieldset>
+															<div class="form-card">
+																<div class="row">
+																	<div class="col-7">
+																		<h2 class="fs-title">
+																			Identification:
+																		</h2>
+																	</div>
+																	<div class="col-5">
+																		<h2 class="steps">
+																			Etape 1 - 5
+																		</h2>
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Prenom(s) :
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<input required class="form-control" name="firstName" id="firstName" placeholder="votre prénom" maxlength="100">
+																		<input type="hidden" class="form-control" name="id">
+																	</div>
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Nom :
+																			<strong style="color:red;"></strong>
+																		</label>
+																		<input class="form-control" name="lastName" id="lastName" placeholder="votre nom" maxlength="100">
+																	</div>
+																</div>
+
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Date de naissance:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<!--min="1968-01-01" max="2002-12-31" -->
+																		<input required type="date" class="form-control" name="birth_date" id="birth_date" placeholder="Date de naissance">
+																	</div>
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Sexe:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<br/>
+																		<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																			<input type="radio" value="M" name="sex" id="sexM" class="my-custom-control-input" required>
+																			<label class="my-custom-control-label" for="sexM">Homme</label>
+																		</div>
+																		<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																			<input type="radio" value="F" name="sex" id="sexF" class="my-custom-control-input" required>
+																			<label class="my-custom-control-label" for="sexM">Femme</label>
+																		</div>
+																	</div>
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Adresse actuelle:
+																			<strong style="color:red;"></strong>
+																		</label>
+																		<input type="text" class="form-control" name="current_address" id="current_address" placeholder="Votre adresse actuelle" maxlength="100">
+																	</div>
+																	<div class="col-md-12 col-lg-4">
+																		<label class="fieldlabels">
+																			Carte nationale d'identité/Passeport:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<input type="text" class="form-control" name="nni" id="nni" placeholder="N° carte d'identification" required pattern="^(1|2)([a-zA-Z0-9]{11,14})$" onblur='this.value = this.value.replace(/[_*$-]/g, "");if(!this.value){ $(this).addClass("is-invalid"); }'>
+																	</div>
+																	<div class="col-md-12 col-lg-8">
+																		<label class="fieldlabels">
+																			N° Carte nationale d'identité/Passeport:
+																			<strong style="color:red;">*</strong>
+																		</label>
+
+																		<input type="file" class="form-control" name="id_card" id="id_card" placeholder="N° carte d'identification" accept="application/pdf,image/*">
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Adresse permanent (Sous prefecture):
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select class="form-control" name="usualDistrict" id="usualDistrict" placeholder="Votre lieu de residence habituelle" required id="usualDistrict"></select>
+																	</div>
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Adresse temporaire (Sous prefecture)
+																			<span class="text-info" style="font-size: 10px;">()</span>:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select class="form-control" name="temporalDistrict" id="temporalDistrict" placeholder="Localité de travail désirée" required id="temporalDistrict"></select>
+																	</div>
+																</div>
+															</div>
+															<input class="next action-button" name="next" type="button" value="Suivant" href="#personal"/>
+														</fieldset>
+													</form>
+													<form novalidate class="needs-validation msform" id="step2" style="display: none;">
+														<fieldset>
+															<div class="form-card">
+																<div class="row">
+																	<div class="col-7">
+																		<h2 class="fs-title">
+																			Informations personnelles:
+																		</h2>
+																	</div>
+																	<div class="col-5">
+																		<h2 class="steps">
+																			Etape 2 - 5
+																		</h2>
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Disctrict:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select required class="form-control" name="localDistrict" placeholder="District de travail" id="localDistrict"></select>
+																	</div>
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			District de candidature:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select required class="form-control" name="posting_district" id="posting_district"></select>
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Numéro Téléphone principal :
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<input type="text" class="form-control" name="phone" id="phone" required placeholder="N° de téléphone" pattern="^(\d){7}$">
+																	<!-- <input type="text" class="form-control" name="telephone"  required placeholder="exemple: 706753412" pattern="^(70|75|76|77|78)(\d){7}$"  onblur='this.value = this.value.replace(/[A-Za-z$-]/g, "");' oninvalid="setCustomValidity('Un numero valide commence par 70,75,76,77,78')"> -->
+																		<!--      ///^(70|75|76|77|78)(\d){7}$/gm  -->
+																	</div>
+
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Numéro Whatsapp:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<input
+																		type="text" class="form-control" name="whatsappPhone" id="whatsappPhone" placeholder="N° Whatshapp" pattern="^(\d){7}$" required>
+																	<!-- see https://regex101.com/r/dT7jZ1/1 -->
+																	</div>
+																	<div class="col-md-12 col-lg-6" style="">
+																		<label class="fieldlabels">
+																			Numéro Téléphone principal : 2:
+																		</label>
+																		<input type="text" class="form-control" name="phone2" id="phone2" placeholder="N° de téléphone 2" pattern="^(\d){7}$">
+																	</div>
+																	<div class="col-md-12 col-lg-6" style="">
+																		<label class="fieldlabels">
+																			Numéro Téléphone principal : 3:
+																		</label>
+																		<input type="text" class="form-control" name="phone3" id="phone3" placeholder="N° de téléphone 3" pattern="^(\d){7}$">
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-12">
+																		<label class="fieldlabels">
+																			Email :
+																			<strong style="color:red;"></strong>
+																		</label>
+																		<input
+																		type="email" class="form-control" name="email" id="email" placeholder="Votre E-mail" pattern="([_a-z0-9]+[\._a-z0-9]*)(\+[a-z0-9]+)?@(([a-z0-9-]+\.)*[a-z]{2,4})" maxlength="100" required>
+																	<!-- Regex email see https://regex101.com/r/qB2yK5/1 -->
+																	</div>
+																</div>
+															</div>
+															<input class="next action-button" name="next" type="button" value="Suivant" href="#payment"/>
+															<input class="previous action-button-previous" name="previous" type="button" value="Précedent"/>
+														</fieldset>
+													</form>
+													<form novalidate class="needs-validation msform" id="step3" style="display: none;">
+														<fieldset>
+															<div class="form-card">
+
+																<div class="row">
+																	<div class="col-7">
+																		<h2 class="fs-title">
+																			Etudes:
+																		</h2>
+																	</div>
+																	<div class="col-5">
+																		<h2 class="steps">
+																			Etape 3 - 5
+																		</h2>
+																	</div>
+																</div>
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			dernier diplome/certificat obtenu :
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select class="form-control" name="diploma" id="diploma" placeholder="Diplôme obtenu" required>
+																			<option value="">Choose your diploma</option>
+																			<optiondiploma value="Bachelor">Bachelor</option>
+																			<optiondiploma value="BSc">BSc</option>
+																			<optiondiploma value="BA">BA</option>
+																			<optiondiploma value="BBA">BBA</option>
+																		</select>
+																	</div>
+
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Copie de diplome ou du certificat:
+																		</label>
+
+																		<input type="file" class="form-control" name="diplomaFile" id="diplomaFile" placeholder="Uploader votre diplôme" accept="application/pdf,image/*" multiple>
+																	</div>
+																</div>
+
+																<div class="row form-group">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Profession:
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<input type="text" class="form-control" name="profession" id="profession" placeholder="Votre Profession" required>
+																		<input type="hidden" name="work" id="work"/>
+																	</div>
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Langues parlées couramment (1) :
+																			<strong style="color:red;">*</strong>
+																		</label>
+																		<select class="form-control" name="language1" id="language1" required required></select>
+																	</div>
+																</div>
+																<div class="row form-group" style="">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Langues parlées couramment (2):
+																		</label>
+																		<select class="form-control" name="language2" id="language2"></select>
+																	</div>
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Langues parlées couramment (3):
+																		</label>
+																		<select class="form-control" name="language3" id="language3"></select>
+																	</div>
+																</div>
+																<div class="row form-group" style="">
+																	<div class="col-md-12 col-lg-6">
+																		<label class="fieldlabels">
+																			Connaissance en informatique?:
+																		</label>
+																		<br/>
+																		<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																			<inputcomputer_knowledge type="radio" value="1" id="computer_knowledgeYes" name="computer_knowledge" class="my-custom-control-input" required>
+																				<label class="my-custom-control-label" for="computer_knowledgeYes">Oui</label>
+																			</div>
+																			<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																				<inputcomputer_knowledge type="radio" value="0" id="computer_knowledgeNo" name="computer_knowledge" class="my-custom-control-input" required>
+																					<label class="my-custom-control-label" for="computer_knowledgeNo">Non</label>
+																				</div>
+																			</div>
+																			<div class="col-md-12 col-lg-6">
+																				<label class="fieldlabels">
+																					Connaissance dans l'utilisation des tablettes?:
+																				</label>
+																				<br/>
+																				<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																					<inputuse_of_tablet type="radio" value="1" id="digitalExperienceYes" name="digitalExperience" class="my-custom-control-input" required>
+																						<label class="my-custom-control-label" for="digitalExperienceYes">Oui</label>
+																					</div>
+																					<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																						<inputuse_of_tablet type="radio" value="0" id="digitalExperienceNo" name="digitalExperience" class="my-custom-control-input" required>
+																							<label class="my-custom-control-label" for="digitalExperienceNo">Non</label>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="row form-group" style="">
+																					<div class="col-md-12 col-lg-6">
+																						<label class="fieldlabels">
+																							Avez vous participez à un recensement ou a une enquete electronique?:
+																						</label>
+																						<br/>
+																						<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																							<input type="radio" value="1" id="censuOrSurveyExperienceYes" name="censuOrSurveyExperience" class="my-custom-control-input" required>
+																							<label class="my-custom-control-label" for="censuOrSurveyExperienceYes">Oui</label>
+																						</div>
+																						<div class="my-custom-control my-custom-radio my-custom-control-inline">
+																							<input type="radio" value="0" id="censuOrSurveyExperienceNo" name="censuOrSurveyExperience" class="my-custom-control-input" required>
+																							<label class="my-custom-control-label" for="censuOrSurveyExperienceNo">Non</label>
+																						</div>
+																					</div>
+																					<div class="col-md-12 col-lg-6" style="visibility: visible;">
+																						<label class="fieldlabels">
+																							Combien de recensements ou a enquetes electroniques avez vous participez
+																						</label>
+																						<br/>
+																						<select class="form-control" name="nbr_census_or_survey" id="nbr_census_or_survey">
+																							<option value="">
+																								0
+																							</option>
+																							<option value="1">
+																								1
+																							</option>
+																							<option value="2">
+																								2
+																							</option>
+																						</select>
+																					</div>
+																				</div>
+																				<div class="row form-group" style="">
+																					<div class="col-md-12 col-lg-12" style="visibility:false ;" id="zone_attest_experience_census_or_surveys"></div>
+																				</div>
+																			</div>
+																			<input class="next action-button" name="next" type="button" value="Suivant" href="#fichers"/>
+																			<input class="previous action-button-previous" name="previous" type="button" value="Précedent"/>
+																		</fieldset>
+																	</form>
+																	<form novalidate class="needs-validation msform" id="step4" style="display: none;">
+																		<fieldset>
+																			<div class="form-card">
+
+																				<div class="row">
+																					<div class="col-7">
+																						<h2 class="fs-title">
+																							Justifications(charger les fichiers):
+																						</h2>
+																					</div>
+																					<div class="col-5">
+																						<h2 class="steps">
+																							Etpae 4 - 5
+																						</h2>
+																					</div>
+																				</div>
+																				<div class="row form-group">
+																					<div class="col-md-12 col-lg-6" style="">
+																						<label class="fieldlabels">
+																							Curriculum vitae (C.V.):
+																							<strong style="color:red;">*</strong>
+																						</label>
+
+																						<input type="file" class="form-control" name="curriculum_vitae" id="curriculum_vitae" placeholder="Your C.V." accept="application/pdf,image/*">
+																					</div>
+																					<div class="col-md-12 col-lg-6">
+																						<div class="row">
+																							<div class="col-md-2" style="padding-top: 28px;">
+																								<img data-lazysrc="" style="vertical-align: middle;float: right;" id="captcha_image"/>
+																								<br>
+																								<a id="captcha_reload" href="#" style="float: right;">Reload</a>
+																							</div>
+																							<div class="col-md-10">
+																								<label class="fieldlabels">
+																									Enter le code de validation  (figure dans l'image)
+																								</label>
+																								<input minlength="4" maxlength="4" name="captcha" id="captcha" type="text" class="form-control" required>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<input class="next action-button" name="next" type="button" value="" id="applyBtn"/>
+																			<button class="btn btn-secondary" type="button" disabled id="applyBtnLoading" style="display:none;float:right">
+																				<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+																				In cours, merci de patienter ...
+																			</button>
+																			<input class="previous action-button-previous" name="previous" type="button" value="Precedent"/>
+																		</fieldset>
+																	</form>
+																	<form novalidate class="needs-validation msform" id="step5" style="display: none;">
+																		<fieldset>
+																			<div class="form-card">
+																				<div class="row">
+																					<div class="col-7">
+																						<h2 class="fs-title">
+																							Terminer:
+																						</h2>
+																					</div>
+																					<div class="col-5">
+																						<h2 class="steps">
+																							Etape 5 - 5
+																						</h2>
+																					</div>
+																				</div>
+																				<br>
+																				<br>
+																				<h2 class="purple-text text-center">
+																					<strong>
+																						Terminer avec succes !
+																					</strong>
+																				</h2>
+																				<br>
+																				<div class="row justify-content-center">
+																					<div class="col-3">
+																						<img class="fit-image" data-lazysrc="assets/img/check_apply.png">
+																					</img>
+																				</div>
+																			</div>
+																			<br>
+																			<br>
+																				<div class="row justify-content-center">
+																					<div class="col-7 text-center">
+																						<h5 class="purple-text text-center success-info-elmt">
+																							Une erreur s'est produite : Veuillez vous assurer que vous disposez d'une bonne connexion Internet (ou utilisez le navigateur Phoenix si vous êtes sur un smartphone) !
+																						</h5>
+																					</div>
+																				</br>
+																			</br>
+																		</br>
+																	</br>
+																</br>
+															</div>
+														</fieldset>
+													</form>
+												</br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Apply Section End -->
+
+
+	<!-- How to apply Section -->
+	<section
+		id="how" class="section-padding">
+		<!-- Container Starts -->
+		<div class="container">
+			<h2 class="section-title wow flipInX" data-wow-delay="0.4s">Comment s'inscrire</h2>
+			<div class="row">
+				<div
+					class="col-md-12">
+					<!--Video -->
+					<div class="controls text-center">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/nWsoUzw0i9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<!-- Video-->
+				</div>
+
+			</div>
+		</div>
+		<!-- Container Ends -->
+	</section>
+	<!-- How to apply Section Ends -->
+
+
+	<!-- My application Section Start -->
+	<div id="application" class="section-padding">
+		<div class="container">
+			<h2 class="section-title wow flipInX" data-wow-delay="0.4s">Verifier votre candidature</h2>
+			<form method="post" id="form_search" style="margin-bottom: 300px; ">
+				<div class="d-flex justify-content-center h-100">
+					<div class="searchbar">
+						<input autocomplete="off" required pattern="^(1|2)([A-Za-z0-9]{11,14})$" class="search_input" type="text" name="search_nin" placeholder="Enter your id card number and click enter ...">
+						<button type="submit" class="search_icon">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<p class="text-center">
+					<small id="passwordHelpBlock" class="form-text text-muted">
+						<b>Pour vérifier votre candidature, saisissez votre numéro de carte d'identité puis saisissez pour lancer la recherche</b>
+						<!--  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji. -->
+					</small>
+					<small class="text-danger form-text" id="noCandidatureHelp" style="font-weight:bold;"></small>
+				</p>
+			</form>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 1000000;">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row align-items-center flex-row-reverse">
+									<div class="col-lg-12">
+										<div class="about-text go-to">
+											<h3 class="dark-color">A propos de ce Candidat</h3>
+											<h6 class="theme-color lead">A Lead UX &amp; UI designer based in Canada</h6>
+
+											<!-- <p>I <mark>design and develop</mark> services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p> -->
+
+											<div class="row about-list">
+												<div class="col-md-12">
+													<div class="media">
+														<label>
+															<b>NIN</b>
+															:
+														</label>
+														<p class="text-info"></p>
+													</div>
+													<div class="media">
+														<label>
+															<b>Sous prefecture
+															</b>
+															:
+														</label>
+														<p class="text-info"></p>
+													</div>
+													<div class="media">
+														<label>
+															<b>Dépuis</b>
+															:
+														</label>
+														<p class="text-info"></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+							<button type="button" class="btn btn-secondary" onclick="showUpdatedCandidate('' ) ">Modifier</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  Search modal -->
+			<div class="modal fade" id="showSearchModal" tabindex="-1" role="dialog" aria-labelledby="showSearchModalLabel" aria-hidden="true" style="z-index: 1000000;">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="showSearchModalLabel">Vérification de la demande de modification</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form id="showSearchModalForm" class="needs-validation msform was-validated">
+								<div class="row align-items-center flex-row-reverse">
+									<div class="col-lg-12">
+										<div class="about-text go-to">
+											<div class="row form-group">
+												<label class="fieldlabels col-sm-4 col-form-label">CNI:
+													<strong style="color:red;">*</strong>
+												</label>
+												<div class="col-md-8">
+													<input required class="form-control" name="nin" placeholder="Your N.I.N." pattern="/^(1|2)\d{12,15}$/ " autocomplete="off" minlength="12" maxlength="15" readonly>
+													<input type="hidden" name="id" required>
+												</div>
+											</div>
+											<div class="row form-group">
+												<label class="fieldlabels col-sm-4 col-form-label">Numéro de dossier:
+													<strong style="color:red;">*</strong>
+												</label>
+												<div class="col-md-8">
+													<input required class="form-control" name="submissionNumber" placeholder="Your submission number" pattern=".{6,6}" minlength="6" maxlength="6" autocomplete="off">
+												</div>
+											</div>
+											<div class="row form-group">
+												<label class="fieldlabels col-sm-4 col-form-label">Code de Validation:
+													<strong style="color:red;">*</strong>
+												</label>
+												<div class="col-md-8">
+													<input required class="form-control" name="validationCode" placeholder="Your validation code" pattern=".{4,4}" autocomplete="off" type="password" minlength="4" maxlength="4">
+													<small id="validationCodeHelp" class="form-text text-muted">Ceci est le code qui a été généré lors de la soumission de votre candidature.</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+							<button type="button" class="btn btn-success" onclick="updateCandidate('' ) ">Vérifier</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  End -->
+
+		</div>
+	</div>
+	<!-- My application Section End -->
+
+
+	<!-- Footer Section Start -->
+	<footer class="footer-area section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+						<ul class="social-icon">
+							<li>
+								<a class="facebook" href="#">
+									<i class="icon-social-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a class="twitter" href="#">
+									<i class="icon-social-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a class="instagram" href="#">
+									<i class="icon-social-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+						<p>Copyright © 2023 All Right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
+
+	<!-- Go to Top Link -->
+	<a href="#" class="back-to-top">
+		<i class="icon-arrow-up"></i>
+	</a>
+
+
+{% endblock %}
