@@ -24,10 +24,10 @@ services:
     # please note that last definitions always *replace* previous ones
 
     # Ecouteur pour historisation des actions des utilisations et la gestion des slug
-    gedmo.listener.loggable:
-        class: App\Loggable\PigorLoggableListener
-        tags:
-            - { name: doctrine.event_subscriber, connection: default }
+    # gedmo.listener.loggable:
+    #     class: App\Loggable\PigorLoggableListener
+    #     tags:
+    #         - { name: doctrine.event_subscriber, connection: default }
 
     gedmo.listener.softdeleteable:
         class: Gedmo\SoftDeleteable\SoftDeleteableListener
